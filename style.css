@@ -1,0 +1,143 @@
+/*LIMPIO CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    
+}
+
+
+/* Asigno max-width a todo el body */
+#body {
+    display: flex;    
+    max-width: 1800px;
+    flex-direction: column;
+    margin: auto;
+    background-color:#f8f9fa;
+}
+
+
+/* Estilos de header */
+
+#header {
+    width: 100%;
+    height: auto; 
+    
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#navBar img {
+    height: 140px;
+    margin: 10px;
+}
+
+
+#navBar li {
+    display: inline-block;
+    margin: 10px;
+    font-size: larger;
+}
+
+/* Estilos de banner */
+
+#banner {
+    width: 100%;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+
+}
+#banner-img {
+    width: 50%;    
+    height: auto;
+}
+
+#banner-img img {
+    width: 70%;
+    min-width: 300px; 
+}
+
+
+#banner-text {
+    width:50% ;
+    height: auto;   
+    
+}
+
+#banner-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: darkslateblue;
+    
+}
+#banner-text p {
+    font-size: 45px;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+
+/* Estilos del contenido dentro del Main */
+
+#main {  
+    width: 65%;   
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin: auto;
+}
+
+.main__contenido1 h2 , p {
+    text-align: center;
+}
+
+.main__contenido1 h2 {
+    color: darkslateblue;
+    padding-top: 30px;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+
+.main__contenido1 p {
+    
+    margin: auto;    
+    padding-top: 25px;
+    font-size: 30px;
+    
+
+}
+
+
+/* Estilos del footer */
+
+#footer {
+    margin-top: 25px;
+    padding-top:15px ;
+    width: 100%;
+    height: auto; 
+    background-color:darkslategray ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    
+}
+
+.footer__links-ul li a {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
