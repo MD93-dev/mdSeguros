@@ -11,11 +11,12 @@
 
 /* Asigno max-width a todo el body */
 #body {
-    display: flex;    
+    //display: flex;    
     max-width: 1800px;
-    flex-direction: column;
+    //flex-direction: column;
     margin: auto;
     background-color:#f8f9fa;
+    
 }
 
 
@@ -24,6 +25,7 @@
 #header {
     width: 100%;
     height: auto; 
+    
     
 }
 
@@ -103,10 +105,11 @@
 
 #main {  
     width: 65%;   
-    display: flex;
+    //display: flex;
     align-items: center;
     height: auto;
     margin: auto;
+    min-height: 100vh;
 }
 
 .main__contenido1 h2 , p {
@@ -158,9 +161,25 @@
 
 }
 
-
-
 .navbar-brand img {
     height: 100px;
     margin: 10px;
 }
+
+/* banner faq de informacion util*/
+
+#bannerFaq {
+    max-width: 1200px;
+    display: block;
+   
+    
+}
+#bannerFaq-img img { 
+    
+    width: 100%;
+   
+    
+
+}
+   
+    

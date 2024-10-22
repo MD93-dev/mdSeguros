@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon">
+    
+    <!-- aca agrego estilos de bootstrap-->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <!-- aca agrego estilos mios-->
+    
     <link rel="stylesheet" href="../css/style.css">
+
     <title>MD Seguros</title>
+
+
 </head>
+
+
+
+
+
 <body id="body">
 
 
- <!--ESTRUCTURA HEADER/NAV-->
+ <!--ESTRUCTURA HEADER/NAV BOOTSTRAP-->
 
-    <header id="header">
-        <nav id="navBar">
-            <img src="images/logo.png" alt="">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="informacionUtil.html">Información Útil</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-     <!-- BANNER-->
-     
-    <section id="banner">
-
+ <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid  ">
+      <a class="navbar-brand " href="../index.html"> <img src="../images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " href="../index.html">Inicio</a>
+          <a class="nav-link "  href="informacionUtil.html">Información Útil</a>
+          <a class="nav-link active" aria-current="page"  href="#">Productos</a>          
+          <a class="nav-link " href="nosotros.html">Nosotros</a>
+          <a class="nav-link "  href="contacto.html">Contactos</a>
+          
         
-            
-                <H1>ESTA WEB ES PRODUCTOS</H1>
-              
-        
-    </section>
+        </div>
+      </div>
+    </div>
+  </nav>
 
+<main id="main">
 
+    <p> Aca va las imagenes de producto </p>
+
+</main>
+   
 
 
         
@@ -44,7 +62,7 @@
         <footer id="footer">
             <section class="footer__ssn">
                 <picture class="footer__ssn-picture">
-                    <img class="footer__ssn-pictureimg" src="images/footer/ssn.png"> 
+                    <img class="footer__ssn-pictureimg" src="../images/footer/ssn.png"> 
                 </picture>
             </section>
 
@@ -62,12 +80,12 @@
 
            <section class="footer__datafiscal">
                 <picture class="footer__datafiscal-picture">
-                    <img class="footer__datafiscal-pictureimg" src="images/footer/datafiscal.png" >
+                    <img class="footer__datafiscal-pictureimg" src="../images/footer/datafiscal.png" >
                 </picture>
             </section>
                 
             
         </footer>
-            
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
     </body>
 </html>   
