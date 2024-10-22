@@ -52,6 +52,9 @@
 #banner {
     width: 100%;   
     display: flex;
+    flex-wrap: wrap;
+   
+    
     justify-content: space-around;
     align-items: center;
     height: auto;
@@ -59,20 +62,24 @@
 
 }
 #banner-img {
-    width: 50%;    
+    width: 50%; 
+    min-width: 400px;   
     height: auto;
+  
 }
 
 #banner-img img {
     width: 70%;
     min-width: 300px; 
+   
 }
 
 
 #banner-text {
+
     width:50% ;
-    height: auto;   
-    
+    height: auto;  
+
 }
 
 #banner-text h1 {
