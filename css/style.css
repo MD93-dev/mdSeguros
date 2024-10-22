@@ -124,4 +124,15 @@
   color: #f8f9fa;
 }
 
+/* Estilos de navbar btc */
+.container-fluid {
+  max-width: 1400px;
+  justify-content: space-around;
+}
+
+.navbar-brand img {
+  height: 100px;
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
