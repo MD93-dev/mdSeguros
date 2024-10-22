@@ -137,7 +137,7 @@
 /* Estilos del footer */
 
 #footer {
-    margin-top: 25px;
+    margin-top: 125px;
     padding-top:15px ;
     width: 100%;
     height: auto; 
@@ -146,12 +146,18 @@
     align-items: center;
     justify-content: space-around;
     padding-bottom: 15px;
+    flex-wrap: wrap;
     
 }
 
 .footer__links-ul li a {
     text-decoration: none;
     color: #f8f9fa;
+}
+
+.footer__ssn , .footer__links , .footer__datafiscal {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Estilos de navbar btc */
