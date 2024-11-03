@@ -1,4 +1,143 @@
 @charset "UTF-8";
+/* agrego @media para cumplir con la entrega*/
+/* cambio colores y tamaños de index */
+@media (max-width: 600px) {
+  .main__contenido_index h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .main__contenido_index p {
+    font-size: 90px;
+    text-align: center;
+    color: rgb(153, 48, 172);
+  }
+}
+/* Estilos de banner */
+#banner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+
+#banner-img {
+  width: 50%;
+  min-width: 300px;
+  height: auto;
+}
+
+#banner-img img {
+  width: 70%;
+  min-width: 300px;
+}
+
+#banner-text {
+  width: 50%;
+  height: auto;
+  /* Establezco el background con degradado */
+  background: linear-gradient(90deg, #008679, #2F6988, #545393, #008679, #2F6988, #545393, #008679);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Hago el background mucho más grande para que pueda rotar suavemente */
+  background-size: 200% 100%;
+  /* Agrego la animación de barrido de izquierda a derecha */
+  animation: flujoColores 5s linear infinite;
+}
+
+@keyframes flujoColores {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+#banner-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#banner-text p {
+  font-size: 45px;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+/* Estilos del contenido dentro del Main */
+#main {
+  width: 65%;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.main__contenido_index h2, p {
+  text-align: center;
+}
+
+.main__contenido_index h2 {
+  color: darkslateblue;
+  padding-top: 30px;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.main__contenido_index p {
+  margin: auto;
+  padding-top: 25px;
+  font-size: 30px;
+}
+
+/* banner faq de informacion util*/
+#bannerFaq {
+  max-width: 1200px;
+  display: block;
+}
+
+#bannerFaq-img img {
+  width: 100%;
+}
+
+.main__contenido1 h1, p {
+  text-align: center;
+}
+
+.main__contenido1 h1 {
+  padding-top: 30px;
+  font-size: 45px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.main__contenido1 p {
+  margin: auto;
+  padding-top: 25px;
+  font-size: 30px;
+}
+
+.main__contenido1 { /* Establezco el background con degradado */
+  background: linear-gradient(90deg, #008679, #2F6988, #545393, #008679, #2F6988);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Hago el background mucho más grande para que pueda rotar suavemente */
+  background-size: 200% 100%;
+  /* Agrego la animación de barrido de izquierda a derecha */
+  animation: flujoColores 5s linear infinite;
+}
+
+@keyframes flujoColores {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 /*LIMPIO CSS*/
 * {
   margin: 0;
@@ -13,6 +152,38 @@
   max-width: 1800px;
   margin: auto;
   background-color: #f8f9fa;
+}
+
+#main {
+  width: 65%;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  min-height: 100vh;
+}
+
+/* Estilos del footer */
+#footer {
+  margin-top: 125px;
+  padding-top: 15px;
+  width: 100%;
+  height: auto;
+  background-color: darkslategray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.footer__links-ul li a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.footer__ssn, .footer__links, .footer__datafiscal {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Estilos de header */
@@ -40,95 +211,6 @@
   font-size: larger;
 }
 
-/* Estilos de banner */
-#banner {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: auto;
-}
-
-#banner-img {
-  width: 50%;
-  min-width: 300px;
-  height: auto;
-}
-
-#banner-img img {
-  width: 70%;
-  min-width: 300px;
-}
-
-#banner-text {
-  width: 50%;
-  height: auto;
-}
-
-#banner-text h1 {
-  font-size: 60px;
-  font-weight: 700;
-  text-align: center;
-  color: darkslateblue;
-}
-
-#banner-text p {
-  font-size: 45px;
-  text-align: center;
-  color: cornflowerblue;
-}
-
-/* Estilos del contenido dentro del Main */
-#main {
-  width: 65%;
-  align-items: center;
-  height: auto;
-  margin: auto;
-  min-height: 100vh;
-}
-
-.main__contenido1 h2, p {
-  text-align: center;
-}
-
-.main__contenido1 h2 {
-  color: darkslateblue;
-  padding-top: 30px;
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.main__contenido1 p {
-  margin: auto;
-  padding-top: 25px;
-  font-size: 30px;
-}
-
-/* Estilos del footer */
-#footer {
-  margin-top: 125px;
-  padding-top: 15px;
-  width: 100%;
-  height: auto;
-  background-color: darkslategray;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 15px;
-  flex-wrap: wrap;
-}
-
-.footer__links-ul li a {
-  text-decoration: none;
-  color: #f8f9fa;
-}
-
-.footer__ssn, .footer__links, .footer__datafiscal {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Estilos de navbar btc */
 .container-fluid {
   max-width: 1400px;
@@ -138,32 +220,6 @@
 .navbar-brand img {
   height: 100px;
   margin: 10px;
-}
-
-/* banner faq de informacion util*/
-#bannerFaq {
-  max-width: 1200px;
-  display: block;
-}
-
-#bannerFaq-img img {
-  width: 100%;
-}
-
-/* agrego @media para cumplir con la entrega*/
-/* cambio colores y tamaños de index */
-@media (max-width: 600px) {
-  #banner-text h1 {
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    color: blueviolet;
-  }
-  #banner-text p {
-    font-size: 35px;
-    text-align: center;
-    color: rgb(153, 48, 172);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

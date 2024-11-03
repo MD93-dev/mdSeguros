@@ -1,0 +1,29 @@
+/*LIMPIO CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    
+}
+
+
+/* Asigno max-width a todo el body */
+#body {
+    //display: flex;    
+    max-width: 1800px;
+    //flex-direction: column;
+    margin: auto;
+    background-color:#f8f9fa;
+    
+}
+
+#main {  
+    width: 65%;   
+    //display: flex;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    min-height: 100vh;
+}

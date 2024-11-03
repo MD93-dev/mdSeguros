@@ -1,0 +1,101 @@
+/* Estilos de banner */
+
+#banner {
+    width: 100%;   
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+
+}
+#banner-img {
+    width: 50%; 
+    min-width: 300px;   
+    height: auto;
+  
+}
+
+#banner-img img {
+    width: 70%;
+    min-width: 300px; 
+   
+}
+
+///////// animacion para entrega //////////
+#banner-text {
+    width: 50%;
+    height: auto;
+
+    /* Establezco el background con degradado */
+    background: linear-gradient(90deg, #008679, #2F6988, #545393, #008679, #2F6988, #545393, #008679);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Hago el background mucho más grande para que pueda rotar suavemente */
+    background-size: 200% 100%;
+
+    /* Agrego la animación de barrido de izquierda a derecha */
+    animation: flujoColores 5s linear infinite;
+}
+
+@keyframes flujoColores {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+///////////////////////////// fin de animacion para entrega///////////////////////////////
+
+#banner-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    //color: linear-gradient(to left, #008679, #2F6988,#545393);
+   
+    
+}
+#banner-text p {
+    font-size: 45px;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+
+/* Estilos del contenido dentro del Main */
+
+#main {  
+    width: 65%;   
+    //display: flex;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.main__contenido_index h2 , p {
+    text-align: center;
+}
+
+.main__contenido_index h2 {
+    color: darkslateblue;
+    padding-top: 30px;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+
+.main__contenido_index p {
+    
+    margin: auto;    
+    padding-top: 25px;
+    font-size: 30px;
+    
+
+}

@@ -1,0 +1,43 @@
+/* Estilos de header */
+
+#header {
+    width: 100%;
+    height: auto; 
+    
+    
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#navBar img {
+    height: 140px;
+    margin: 10px;
+}
+
+
+
+
+
+#navBar li {
+    display: inline-block;
+    margin: 10px;
+    font-size: larger;
+}
+
+/* Estilos de navbar btc */
+
+.container-fluid { max-width: 1400px;
+    justify-content:space-around;
+
+}
+
+.navbar-brand img {
+    height: 100px;
+    margin: 10px;
+}

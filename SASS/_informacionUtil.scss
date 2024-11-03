@@ -1,0 +1,66 @@
+
+
+/* banner faq de informacion util*/
+
+#bannerFaq {
+    max-width: 1200px;
+    display: block;
+   
+    
+}
+#bannerFaq-img img { 
+    
+    width: 100%;
+   
+    
+
+}
+   
+
+
+.main__contenido1 h1 , p {
+    text-align: center;
+}
+
+.main__contenido1 h1 {
+
+    padding-top: 30px;
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 30px;
+
+}
+
+.main__contenido1 p {
+    
+    margin: auto;    
+    padding-top: 25px;
+    font-size: 30px;
+    
+
+}
+    
+
+.main__contenido1 { /* Establezco el background con degradado */
+    background: linear-gradient(90deg, #008679, #2F6988, #545393, #008679, #2F6988);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Hago el background mucho más grande para que pueda rotar suavemente */
+    background-size: 200% 100%;
+
+    /* Agrego la animación de barrido de izquierda a derecha */
+    animation: flujoColores 5s linear infinite;
+}
+
+@keyframes flujoColores {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
