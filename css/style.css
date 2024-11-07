@@ -230,4 +230,100 @@
   margin: 10px;
 }
 
+#banner-text-productos {
+  margin: auto;
+  height: auto;
+  /* Establezco el background con degradado */
+  background: linear-gradient(90deg, #008679, #2F6988, #545393, #008679, #2F6988, #545393, #008679);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Hago el background mucho más grande para que pueda rotar suavemente */
+  background-size: 200% 100%;
+  /* Agrego la animación de barrido de izquierda a derecha */
+  animation: flujoColores 5s linear infinite;
+}
+
+@keyframes flujoColores {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+#banner-text-productos h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#banner-text-productos h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  row-gap: 10px;
+}
+
+.botonera {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.botonera img {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #bbb;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.botonera img:hover {
+  border: 3px solid #893aa3;
+  border-radius: 6px;
+  width: 160px;
+  height: 150px;
+}
+
+.panel {
+  background: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+  .row {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 816px) {
+  .row {
+    width: 90%;
+  }
+  .botonera amp-img {
+    border: 3px solid rgba(137, 58, 163, 0.3764705882);
+    border-radius: 6px;
+    width: 160px;
+    height: 150px;
+  }
+}
+.main__contenido_productos h3 {
+  color: #008679;
+  padding-top: 30px;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main__contenido_productos p {
+  color: #545393;
+  margin: auto;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
