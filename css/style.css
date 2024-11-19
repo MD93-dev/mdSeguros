@@ -76,6 +76,19 @@
   min-height: 100vh;
 }
 
+#main-nosotros {
+  width: 65%;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  min-height: 100vh;
+}
+
+@media (max-width: 615px) {
+  #main-nosotros {
+    width: 90%;
+  }
+}
 .main__contenido_index h2, p {
   text-align: center;
 }
@@ -101,6 +114,11 @@
   font-size: 20px;
 }
 
+@media (max-width: 615px) {
+  #banner-text {
+    width: 100%;
+  }
+}
 /* banner faq de informacion util*/
 #bannerFaq {
   max-width: 1200px;
@@ -324,6 +342,57 @@
   margin: auto;
   padding-top: 20px;
   font-size: 25px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  row-gap: 10px;
+}
+
+.botonera-contacto {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.botonera-contacto img {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #bbb;
+  width: 160px;
+  height: 140px;
+  margin: auto;
+}
+
+.botonera-contacto img:hover {
+  border: 3px solid #893aa3;
+  border-radius: 6px;
+  width: 160px;
+  height: 150px;
+}
+
+.panel {
+  background: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+  .row {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 816px) {
+  .row {
+    width: 90%;
+  }
+  .botonera-contacto amp-img {
+    border: 3px solid rgba(137, 58, 163, 0.3764705882);
+    border-radius: 6px;
+    width: 160px;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

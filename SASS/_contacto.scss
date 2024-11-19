@@ -1,0 +1,21 @@
+///// botonera ///
+.row{display:flex;flex-wrap:wrap;width:60%;margin:auto;row-gap: 10px;}
+
+.botonera-contacto{width:auto;height:auto;margin:auto}
+		
+.botonera-contacto img{border:1px solid #ddd;border-radius:6px;color:#bbb;width:160px;height:140px;margin:auto}
+		
+.botonera-contacto img:hover{border:3px solid #893aa3;border-radius:6px;width:160px;height:150px}
+		
+.panel{background:transparent}
+
+
+
+@media screen and (max-width: 1400px){   
+    .row{width:70%}
+}
+@media screen and (max-width: 816px){
+    .row{width:90%}
+    .botonera-contacto amp-img{
+        border:3px solid #893aa360;border-radius:6px;width:160px;height:150px}
+}

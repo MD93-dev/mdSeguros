@@ -79,6 +79,25 @@
     min-height: 100vh;
 }
 
+#main-nosotros {  
+    width: 65%;   
+    //display: flex;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    min-height: 100vh;
+}
+
+@media (max-width: 615px) {
+    #main-nosotros {  
+        width: 90%
+    }
+   
+
+}
+
+
+
 .main__contenido_index h2 , p {
     text-align: center;
 }
@@ -108,3 +127,10 @@
     
 
 }
+
+
+@media (max-width: 615px) {
+    #banner-text {width: 100%;}       
+
+}
+
