@@ -24,12 +24,12 @@ while (!(edad >= 18)) {
 let ingresarSistema 
 
 do {
-    ingresarSistema = prompt("¿Deseas ingresar al sistema " + nombre +" ? Responde 'SI' o 'NO':").toUpperCase();
+    ingresarSistema = prompt("¿Deseas ingresar al sistema " + nombre.toUpperCase() +" ? Responde 'SI' o 'NO':").toUpperCase();
 } while (ingresarSistema !== "SI" && ingresarSistema !== "NO") ;
 
 if (ingresarSistema === "SI") {
-    alert("Bienvenido al sistema " + nombre);
+    alert("Bienvenido al sistema " + nombre.toUpperCase());
 } else {
-    alert("Has decidido no ingresar al sistema " + nombre);
+    alert("Has decidido no ingresar al sistema " + nombre.toUpperCase());
 }
 
