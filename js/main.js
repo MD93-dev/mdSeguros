@@ -1,4 +1,6 @@
 
+/*
+
 //input de datos
 
 let nombre = prompt("ingrese nombre")
@@ -13,7 +15,7 @@ let edad = prompt("ingrese edad, solo si sos mayor podes continuar")
 }*/
 
 // hacemos un while para que vuelva a pedir edad hasta que sea mayor y uso ley DeMorgan para aplicar lo visto
-while (!(edad >= 18)) {
+/*while (!(edad >= 18)) {
      nombre = prompt(" la persona anterior era menor, ingrese nuevo nombre")
      edad = prompt("ingrese edad, solo si sos mayor podes continuar") 
 }
@@ -31,5 +33,8 @@ if (ingresarSistema === "SI") {
     alert("Bienvenido al sistema " + nombre.toUpperCase());
 } else {
     alert("Has decidido no ingresar al sistema " + nombre.toUpperCase());
-}
+}*/
 
+
+// 1) recuperar datos con getelementbyid
+// 2) construir el array

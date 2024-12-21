@@ -71,6 +71,54 @@
     </section>
     
     <!--ESTRUCTURA MAIN-->
+
+   <!--cotizador curso js-->
+  <!-- Información del vehículo -->
+
+<section class="seccionFormulario">
+  <form class="form-container">
+    <!-- Información del vehículo -->
+    <fieldset>
+        <legend>Información del vehículo</legend>
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+
+        <label for="año">Año:</label>
+        <input type="number" id="anio" name="año" required>
+
+        <label for="version">Versión:</label>
+        <input type="text" id="version" name="version" required>
+    </fieldset>
+
+    <!-- Información personal -->
+    <fieldset>
+        <legend>Información personal</legend>
+        <label for="nombreApellido">Nombre y Apellido:</label>
+        <input type="text" id="nombreApellido" name="nombreApellido" required>
+
+        <label for="codigoPostal">Código Postal:</label>
+        <input type="text" id="codigoPostal" name="codigoPostal" required>
+
+        <label for="movil">Móvil:</label>
+        <input type="tel" id="movil" name="movil" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <!-- Botones -->
+    <div class="form-buttons">
+        <button type="reset">Resetear</button>
+        <button type="submit">Cotizar</button>
+        
+    </div>
+</form>
+</section>
+<!--fin del form -->
+
     <main id="main">
         <section class="main__contenido_index">
             <h2> Tu asesor de seguros Online</h2>
@@ -108,6 +156,9 @@
         </section>
     </footer>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/classes.js"></script>
+    <script src="./js/cotizaciones.js"></script>
     <script src="./js/main.js"></script>
     </body>
     
