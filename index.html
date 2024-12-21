@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <!-- SEO -->
+    <meta name="keywords" content="seguros online, seguros para autos, seguros para motos">
+    <meta name="description" content="Asegurá y compará tus seguros de forma online a un solo clic">
+    <meta name="author" content="Maximiliano Diaz">
+    <!-- meta OG que vi que se usan-->
+    <meta property="og:description"
+        content="Seguros para Autos Online. Cotizá, compará y contratá ONLINE Mas de 25 precios y coberturas al instante. ">
+    <meta property="og:title" content="Seguros para autos online | Segurline">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <!-- aca agrego estilos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- aca agrego estilos mios-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>MD Seguros</title>
+
 </head>
-<body>
-    <h1>hola mundo</h1>
 
+<body id="body">
+
+ <!--ESTRUCTURA HEADER/NAV BOOTSTRAP-->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid  ">
+      <a class="navbar-brand " href="..index.html"> <img src="images/logo.png" alt="logo mdseguros"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="pages/informacionUtil.html">Información Útil</a>
+          <a class="nav-link" href="pages/productos.html">Productos</a>          
+          <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+          <a class="nav-link" href="pages/contacto.html">Contactos</a>        
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ <!--ESTRUCTURA HEADER/NAV SIN BOOSTRAP 
+    <header id="header">
+        <nav id="navBar">
+            <img src="images/logo.png" alt="">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/informacionUtil.html">Información Útil</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>                           -->
+     
+    
+    <!-- BANNER-->     
+    <section id="banner">
+        <picture id="banner-img">
+            <img src="images/seguros.webp" alt="seguros online">
+        </picture>
+        <section id="banner-text">
+            <h1 id="banner-text-h1">Seguros Online</h1>
+            <p>Cotizá y contratá tus seguros de forma online desde la cómodidad de tu casa</p>
+        </section>
+    </section>
+    
+    <!--ESTRUCTURA MAIN-->
+    <main id="main">
+        <section class="main__contenido_index">
+            <h2> Tu asesor de seguros Online</h2>
+            <h3>Asesoría en seguros</h3>
+            <p>Te asesoramos en todo el proceso, ya sea desde la consulta y cotización del seguro de forma online , en la
+                contratación o durante el periodo de vigencia de su seguro sin costo.</p>
+            <h3>Conectividad</h3>
+            <p>Contamos con diversos puntos de contacto para que elijas el que te resulte más cómodo. De esta forma podemos
+                dar la mejor asistencía para que contrates tus seguros online.</p>
+            <h3>Asistencia télefonica</h3>
+            <p>Te asistimos en todo momento con operadores altamente capacitados que te van acompañar desde la cotización,
+                contratación y durante la vigencia del seguro.</p>
+        </section>
+    </main>
+    <!--ESTRUCTURA FOOTER-->
+    <footer id="footer">
+        <section class="footer__ssn">
+            <picture class="footer__ssn-picture">
+                <img class="footer__ssn-pictureimg" src="images/footer/ssn.png" alt="ssn">
+            </picture>
+        </section>
+        <section class="footer__links">
+            <ul class="footer__links-ul">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/informacionUtil.html">Información Útil</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contactos</a></li>
+            </ul>
+        </section>
+        <section class="footer__datafiscal">
+            <picture class="footer__datafiscal-picture">
+                <img class="footer__datafiscal-pictureimg" src="images/footer/datafiscal.png" alt="datafiscal">
+            </picture>
+        </section>
+    </footer>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
-</body>
-
-</html>
+    </body>
+    
+    </html>
