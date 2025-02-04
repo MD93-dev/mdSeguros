@@ -12,9 +12,6 @@ class cotizaciones {
         this.movil = movil;
         this.date = date;
         this.precio = 0;
-
-
-
     }
 
     precioSeguro() {
